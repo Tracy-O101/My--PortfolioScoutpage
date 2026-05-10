@@ -1,0 +1,193 @@
+/* ------------------ General Styles ------------------ */
+body {
+    font-family: 'Lora', serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #f5ebe0; /* light brown background */
+    color: #4b2e2e; /* dark brown text */
+}
+
+h1, h2, h3 {
+    font-family: 'Emblema One', cursive;
+    margin: 0.5em 0;
+    color: #3e1f1f; /* darker brown for headers */
+}
+
+a {
+    text-decoration: none;
+    color: #6b3e26; /* brown links */
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+.hero {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.5),
+    rgba(255, 255, 255, 0.5)),
+    url("../images/baby-hawk.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right;
+}
+.welcome {
+    position: absolute;
+    top: 40%;
+}
+.display-1 {
+    font-size: 4em;
+}
+.bg-brown {
+    background-color: #2a1f14 !important;
+}
+
+/* ------------------ Image Styles ------------------ */
+img {
+    max-width: 100%;
+    display: inline-block; 
+    margin-right: 10px; 
+    vertical-align: middle;
+}
+
+/* Example CSS Reset */
+img, video, h1, h2, h3, p {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+/* Style rules for skip navigation link */
+.skip {
+    position: absolute;
+    left: -999px;
+}
+
+.skip:focus {
+    left: 10px;
+    top: 10px;
+    background: #000;
+    color: #fff;
+    padding: 5px;
+}
+
+.image-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.image-row img {
+    width: 30%;
+    height: auto;
+}
+
+/* ------------------ Mobile vs Tab-Desk ------------------ */
+.mobile {
+    display: block;
+}
+
+.tab-desk {
+    display: none;
+}
+
+/* ------------------ Header Area ------------------ */
+header {
+    background-color:#d8b4a6; /* medium brown */
+    padding: 1% 2%;
+}
+
+.mobile h1,
+.mobile h3 {
+    padding: 2%;
+    text-align: center;
+}
+
+/* ------------------ Navigation Styles ------------------ */
+nav {
+    background-color: #6b3e26; /* dark brown nav */
+}
+
+nav ul {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #4b2e2e; /* dark brown text */
+    font-weight: bold;
+    padding: 10px 0;
+    display: block;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* ------------------ Main Content Styles ------------------ */
+main {
+    max-width: 900px;
+    margin: 20px; /* left-aligned */
+    padding: 0 15px;
+    text-align: left;
+}
+
+section {
+    background-color: #fff0e6; /* lighter brown card */
+    padding: 15px 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    margin-bottom: 30px;
+}
+
+section h2 {
+    color: #4b2e2e;
+}
+
+/* ------------------ Footer Styles ------------------ */
+footer {
+    background-color: #3e1f1f; /* very dark brown */
+    color: #f5ebe0; /* light text */
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 20px;
+    font-size: 0.9em;
+}
+
+/* ------------------ Responsive Styles ------------------ */
+@media (min-width: 768px) {
+    .mobile {
+        display: none;
+    }
+.social img {
+    display: inline-block;
+    padding: 4%;
+}
+    .tab-desk {
+        display: block;
+    }
+/* Tablet Viewport: Style rules for footer area */
+
+footer {
+    overflow: auto;
+}
+
+.copyright {
+    float: left;
+    width: 65%;
+}
+
+.social {
+    float: right;
+    width: 25%;
+}
+    nav ul {
+        justify-content: flex-start;
+        padding-left: 20px;
+    }
+}
